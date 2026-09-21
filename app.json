@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Saraiva Mobile",
+    "slug": "saraiva-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": { "package": "br.com.academico.saraivamobile" },
+    "ios": { "bundleIdentifier": "br.com.academico.saraivamobile" },
+    "web": { "bundler": "metro" }
+  }
+}
