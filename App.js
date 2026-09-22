@@ -17,11 +17,13 @@ function AppContent(){
  const cartCount=Object.values(cart).reduce((a,b)=>a+b,0);
  const toggleFav=id=>setFavorites(x=>x.includes(id)?x.filter(v=>v!==id):[...x,id]);
  const props={navigate,route,cart,setCart,cartCount,favorites,toggleFav,add,query,setQuery};
- const screens={};
+ const screens={splash:Splash};
  const Screen=screens[route.name]||(()=>null);
  return <SafeAreaView style={s.safe}><StatusBar style={route.name==='splash'?'light':'auto'}/><Screen {...props}/></SafeAreaView>;
 }
 
-const s=StyleSheet.create({safe:{flex:1,backgroundColor:colors.primary}});
+function Splash(){return <View style={s.splash}><Logo light/><Text style={s.splashText}>A maior variedade de livros para você.</Text><ActivityIndicator size="large" color={colors.accent} style={{marginTop:45}}/></View>}
+
+const s=StyleSheet.create({safe:{flex:1,backgroundColor:colors.primary},splash:{flex:1,backgroundColor:colors.primary,alignItems:'center',justifyContent:'center'},splashText:{color:'#fff',fontSize:16,marginTop:22}});
 
 export default function App(){return <SafeAreaProvider><AppContent/></SafeAreaProvider>}
