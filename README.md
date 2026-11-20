@@ -2,7 +2,7 @@
 
 Clone visual acadêmico, sem vínculo comercial com a Saraiva. Aplicativo de livraria feito em React Native com Expo para a P2 da disciplina.
 
-**Vídeo de demonstração:** _cole aqui o link do vídeo_
+**Vídeo de demonstração:** https://1drv.ms/v/c/28f9abb8e4865093/IQDKae8aXv13S7CnxZLI4FxGAUOtCQmazIrgxzy1hSl6pfY?e=w7tWwp
 
 ## O que o projeto usa
 
