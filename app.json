@@ -2,11 +2,23 @@
   "expo": {
     "name": "Saraiva Mobile",
     "slug": "saraiva-mobile",
+    "scheme": "saraivamobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "android": { "package": "br.com.academico.saraivamobile" },
-    "ios": { "bundleIdentifier": "br.com.academico.saraivamobile" },
-    "web": { "bundler": "metro" }
+    "android": {
+      "package": "br.com.academico.saraivamobile"
+    },
+    "ios": {
+      "bundleIdentifier": "br.com.academico.saraivamobile"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-router",
+      "expo-font"
+    ]
   }
 }
